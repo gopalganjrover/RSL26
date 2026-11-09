@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>19th Course for Rover Mate 2026 — Bangladesh Scouts, Gopalganj District Rover</title>
+<style>
+  :root{--green:#14532D;--dark:#0B3220;--gold:#B8912B;--gold-lt:#E3C169;
+        --paper:#FFFDF6;--ink:#1B2A20;--role:#3C4A40}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);line-height:1.7;
+       font-family:"Baskerville","Libre Baskerville",Georgia,"Times New Roman",serif}
+  header{background:var(--green);color:var(--paper);padding:24px 18px;text-align:center;
+         border-bottom:4px solid var(--gold)}
+  header .org{font-size:.9rem;letter-spacing:.22em;text-transform:uppercase}
+  header h1{margin:.5rem 0 .3rem;font-size:1.3rem;line-height:1.45}
+  header h1 sup{font-size:.6em;vertical-align:super}
+  header .meta{font-size:.92rem;color:var(--gold-lt)}
+  main{max-width:880px;margin:0 auto;padding:20px 16px 56px}
+  section{margin:28px 0}
+  h2{font-size:1.05rem;color:var(--green);letter-spacing:.06em;text-transform:uppercase;
+     border-left:5px solid var(--gold);padding:4px 0 4px 12px;margin:0 0 12px}
+  table{width:100%;border-collapse:collapse;font-size:.95rem;background:#fff}
+  th,td{border:1px solid #ddd6c2;padding:9px 12px;text-align:left;vertical-align:top}
+  th{background:#F3EFE2;color:var(--dark);white-space:nowrap}
+  thead th{background:var(--green);color:var(--paper)}
+  .card{background:#fff;border:1px solid var(--gold-lt);border-top:4px solid var(--green);
+        border-radius:6px;padding:18px 20px}
+  .card h3{margin:0 0 10px;color:var(--dark);font-size:1.3rem}
+  .pill{display:inline-block;background:#E8F0E8;color:var(--green);border-radius:999px;
+        padding:3px 13px;font-size:.82rem;margin-right:7px}
+  .pending{color:var(--role);font-style:italic}
+  .ok{color:var(--green);margin:14px 0 0}
+  footer{text-align:center;font-size:.85rem;color:var(--role);padding:18px;
+         border-top:1px solid var(--gold-lt);letter-spacing:.08em}
+  a{color:var(--green)}
+  @media(max-width:520px){th,td{padding:7px 9px;font-size:.9rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="org">Bangladesh Scouts</div>
+  <div class="org">Gopalganj District Rover</div>
+  <h1>19<sup>th</sup> Course for Rover Mate 2026</h1>
+  <div class="meta">12–16 November 2026 · Zela Proshason School and College, Gopalganj</div>
+</header>
+
+<main>
+  <section id="participant">
+    <h2>Participant Details</h2>
+    <div class="card" id="pcard"><span class="pending">Scan the QR code printed on a
+      certificate to see that participant's details here.</span></div>
+  </section>
+
+  <section>
+    <h2>Programme Information</h2>
+    <table id="prog"></table>
+  </section>
+
+  <section>
+    <h2>Course Staff</h2>
+    <table id="staff"></table>
+  </section>
+
+  <section>
+    <h2>Programme Schedule</h2>
+    <table id="sched"></table>
+  </section>
+
+  <section>
+    <h2>Contact and Verification</h2>
+    <div class="card">
+      To verify a certificate, contact the District Secretary, Bangladesh Scouts,
+      Gopalganj District Rover — mobile 01717314690,
+      e-mail <a href="mailto:gopalganjdistrictrover@gmail.com">gopalganjdistrictrover@gmail.com</a>.
+    </div>
+  </section>
+</main>
+
+<footer>Bangladesh Scouts, Gopalganj District Rover · Be Prepared to serve</footer>
+
+<script>
+// ---------------------------------------------------------------------
+// All content is held in the four blocks below. Entries marked "………" are
+// to be filled in when the district office supplies them.
+// ---------------------------------------------------------------------
+const PROGRAMME = [
+ [
+  "Course",
+  "19th Course for Rover Mate 2026"
+ ],
+ [
+  "Organised by",
+  "Bangladesh Scouts, Gopalganj District Rover"
+ ],
+ [
+  "Venue",
+  "Zela Proshason School and College, Gopalganj"
+ ],
+ [
+  "Dates",
+  "12–16 November 2026 (five days)"
+ ],
+ [
+  "Contents",
+  "Duties of the Rover Mate, crew leadership and the Rover Scout programme"
+ ],
+ [
+  "Certificate series",
+  "…/RM/2026"
+ ]
+];
+
+const STAFF = [
+ [
+  "Course Leader",
+  "Shankar Kumar Sana, ALT",
+  "Secretary, Khulna Open Rover Scout Group, Khulna"
+ ],
+ [
+  "Trainer",
+  "Professor Masud Ahmed, ALT",
+  "Vice-Principal, Zela Proshason School and College, Gopalganj"
+ ],
+ [
+  "Trainer",
+  "Md. Zubair Al Mahmud, ALT",
+  "Associate Professor, Department of English, Gopalganj Science and Technology University"
+ ],
+ [
+  "Trainer",
+  "Professor Shuklal Biswas, Woodbadger (C.A.L.T.)",
+  "Head, Department of Botany, Gopalganj Government College"
+ ],
+ [
+  "Trainer",
+  "Professor Dr. Mst. Halima Khatun, Woodbadger",
+  "Department of Physics, Gopalganj Science and Technology University"
+ ],
+ [
+  "Trainer",
+  "Raju Shikder, Woodbadger",
+  "Secretary, Troop Gilwell Open Scout Group, Gopalganj"
+ ],
+ [
+  "Trainer",
+  "Bidesh Ranjan Mridha, Woodbadger",
+  "Assistant Professor, Kapotakshma College, Koyra, Khulna"
+ ],
+ [
+  "Trainer",
+  "Sakib Husain Hredoy, Skill Course Completed",
+  "Secretary, Anirban Open Scout Group, Gopalganj"
+ ]
+];
+
+const SCHEDULE = [
+ [
+  "Day 1 — 12 Nov 2026",
+  "Opening; Rover Scouting and the role of the Rover Mate"
+ ],
+ [
+  "Day 2 — 13 Nov 2026",
+  "Crew organisation, patrol method and crew leadership"
+ ],
+ [
+  "Day 3 — 14 Nov 2026",
+  "Programme planning and project work"
+ ],
+ [
+  "Day 4 — 15 Nov 2026",
+  "Community service and outdoor practice"
+ ],
+ [
+  "Day 5 — 16 Nov 2026",
+  "Evaluation, closing and distribution of certificates"
+ ]
+];
+
+// Certificate number -> participant (built from the roster)
+const PARTICIPANTS = {
+ "001": {
+  "name": "Md. Rakib Hasan",
+  "unit": "Gopalganj Government College Rover Scout Group",
+  "date": "16 November 2026"
+ },
+ "002": {
+  "name": "Sumaiya Akter",
+  "unit": "Gopalganj Science and Technology University Rover Scout Group",
+  "date": "16 November 2026"
+ },
+ "003": {
+  "name": "Tanvir Ahmed Joy",
+  "unit": "Tungipara Government College Rover Scout Group",
+  "date": "16 November 2026"
+ }
+};
+
+function rows(tbl, data, head){
+  const t = document.getElementById(tbl);
+  let h = head ? "<thead><tr>" + head.map(c => "<th>"+c+"</th>").join("") + "</tr></thead>" : "";
+  h += "<tbody>" + data.map(r =>
+        "<tr>" + r.map((c,i) => (i===0 && !head ? "<th>"+c+"</th>" : "<td>"+c+"</td>")).join("") +
+        "</tr>").join("") + "</tbody>";
+  t.innerHTML = h;
+}
+rows("prog", PROGRAMME);
+rows("staff", STAFF, ["Role", "Name", "Designation"]);
+rows("sched", SCHEDULE, ["Day", "Session"]);
+
+const cert = (location.hash.match(/C=([^&]+)/) || [])[1];
+if (cert) {
+  const p = PARTICIPANTS[decodeURIComponent(cert)];
+  const box = document.getElementById("pcard");
+  box.innerHTML = p
+    ? "<h3>" + p["name"] + "</h3>" +
+      "<div><span class='pill'>Certificate No. " + cert + "/RM/2026</span></div>" +
+      "<table style='margin-top:14px'><tbody>" +
+      "<tr><th>Rover Scout Group</th><td>" + p["unit"] + "</td></tr>" +
+      "<tr><th>Date of award</th><td>" + p["date"] + "</td></tr>" +
+      "<tr><th>Award</th><td>Certificate of Participation, 19th Course for Rover Mate 2026</td></tr>" +
+      "</tbody></table>" +
+      "<p class='ok'>&#10004; This certificate is recorded with Bangladesh Scouts, " +
+      "Gopalganj District Rover.</p>"
+    : "<span class='pending'>Certificate No. " + cert + " was not found in the record. " +
+      "Please contact the district office for verification.</span>";
+}
+</script>
+</body>
+</html>
